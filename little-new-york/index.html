@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little New York – Restaurant București</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-white font-sans">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-10 bg-neutral-950/80 backdrop-blur border-b border-neutral-800 px-6 py-4 flex justify-between items-center">
+    <span class="text-yellow-400 font-bold tracking-widest uppercase text-sm">Little New York</span>
+    <a href="#contact" class="text-xs uppercase tracking-widest text-neutral-400 hover:text-yellow-400 transition">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6"
+    style="background:linear-gradient(to bottom,rgba(0,0,0,.7) 0%,rgba(0,0,0,.85) 100%),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=80') center/cover no-repeat">
+    <p class="text-yellow-400 uppercase tracking-[.3em] text-xs mb-4">Restaurant • București</p>
+    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-none">Little<br/>New York</h1>
+    <p class="text-neutral-300 max-w-md text-base mb-8">
+      O experiență culinară autentică în inima Bucureștiului — preparate rafinate, atmosferă unică și ospitalitate desăvârșită.
+    </p>
+    <a href="#contact"
+      class="bg-yellow-400 text-neutral-950 font-bold uppercase tracking-widest text-sm px-8 py-3 rounded-full hover:bg-yellow-300 transition">
+      Rezervă o masă
+    </a>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-neutral-900 py-16 px-6">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-yellow-400 text-3xl mb-3">🍽️</div>
+        <h3 class="font-bold text-lg mb-1">Bucătărie Rafinată</h3>
+        <p class="text-neutral-400 text-sm">Preparate inspirate din clasicii americani, gătite cu ingrediente proaspete.</p>
+      </div>
+      <div>
+        <div class="text-yellow-400 text-3xl mb-3">🥂</div>
+        <h3 class="font-bold text-lg mb-1">Bar & Cocktailuri</h3>
+        <p class="text-neutral-400 text-sm">O selecție atentă de băuturi fine și cocktailuri signature.</p>
+      </div>
+      <div>
+        <div class="text-yellow-400 text-3xl mb-3">🎷</div>
+        <h3 class="font-bold text-lg mb-1">Atmosferă Vibrantă</h3>
+        <p class="text-neutral-400 text-sm">Muzică live și un decor care te poartă direct în New York.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-neutral-950 py-16 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-2">Vino la noi</h2>
+      <p class="text-neutral-400 text-sm mb-8">Ne găsești în centrul Bucureștiului, gata să te primim.</p>
+      <div class="space-y-4 text-sm text-neutral-300">
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-yellow-400">📍</span>
+          <a href="https://maps.google.com/?q=44.430531,26.104566" target="_blank"
+            class="hover:text-yellow-400 transition">Strada Bărăției 33, 030167 București, România</a>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-yellow-400">📞</span>
+          <a href="tel:+40312221718" class="hover:text-yellow-400 transition">+40 31 222 1718</a>
+        </div>
+      </div>
+      <div class="mt-8">
+        <iframe class="w-full rounded-xl border border-neutral-800" height="220" loading="lazy" style="filter:grayscale(1) invert(1) contrast(.8)"
+          src="https://maps.google.com/maps?q=44.430531,26.104566&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 border-t border-neutral-800 py-4 text-center text-xs text-neutral-600">
+    © 2025 Little New York. Toate drepturile rezervate.
+  </footer>
+
+</body>
+</html>

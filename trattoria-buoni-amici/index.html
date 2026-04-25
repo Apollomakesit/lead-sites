@@ -1,70 +1,175 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trattoria Buoni Amici – București</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trattoria Buoni Amici — Restaurant Italian în București</title>
+    <meta name="description" content="Trattoria Buoni Amici — Restaurant italian autentic în București. 1924 recenzii. Sună acum: +40 763 590 519">
+    <meta property="og:title" content="Trattoria Buoni Amici — Restaurant Italian în București">
+    <meta property="og:description" content="Bucătărie italiană autentică cu 1924 recenzii. Paste, pizza, și specialități din Italia.">
+    <meta property="og:type" content="business.business">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-gradient { background: linear-gradient(135deg, #fef3c7 0%, #faf5f0 100%); }
+        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+        @media (min-width: 768px) { .sticky-cta { position: static; } }
+    </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-serif">
+<body class="bg-stone-50 text-stone-900">
+    <!-- Sticky Nav -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-amber-900">Trattoria Buoni Amici</h1>
+            <a href="tel:+40763590519" class="hidden md:inline-block px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition text-sm font-semibold">
+                Sună Acum
+            </a>
+        </div>
+    </nav>
 
-  <!-- Hero -->
-  <section class="relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-center px-6"
-    style="background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&q=80')">
-    <p class="text-amber-400 uppercase tracking-widest text-sm mb-3 font-sans">Restaurant italian · București</p>
-    <h1 class="text-white text-5xl md:text-7xl font-bold leading-tight mb-4">Trattoria<br>Buoni Amici</h1>
-    <p class="text-stone-200 text-lg md:text-xl max-w-xl mb-8">Savurați autenticul gust italian în inima Bucureștiului — paste proaspete, vinuri fine și o atmosferă caldă, ca acasă.</p>
-    <a href="tel:+40763590519" class="bg-amber-500 hover:bg-amber-600 text-white font-sans font-semibold px-8 py-3 rounded-full transition">Rezervați o masă</a>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12 md:py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-amber-900 mb-4">Trattoria Buoni Amici</h1>
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <span class="text-2xl text-amber-600">★★★★★</span>
+                <span class="text-lg font-semibold text-stone-700">1924 recenzii</span>
+            </div>
+            <p class="text-lg text-stone-700 mb-8">Bucătărie italiană autentică cu ingrediente importate direct din Italia</p>
+            
+            <!-- Primary CTA -->
+            <div class="flex flex-col md:flex-row gap-3 justify-center mb-6">
+                <a href="tel:+40763590519" class="px-8 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    📞 Sună pentru Rezervare
+                </a>
+                <a href="https://wa.me/40763590519" class="px-8 py-4 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    💬 WhatsApp
+                </a>
+            </div>
 
-  <!-- About -->
-  <section class="max-w-3xl mx-auto py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4">Bine ați venit!</h2>
-    <p class="text-stone-600 leading-relaxed">La <strong>Trattoria Buoni Amici</strong> vă așteptăm cu rețete tradiționale italiene, preparate cu ingrediente proaspete aduse direct din Italia. De la bruschette și risotto până la tiramisu autentic — fiecare fel de mâncare este o poveste.</p>
-  </section>
+            <!-- Address & Hours -->
+            <div class="text-sm text-stone-600 space-y-1">
+                <p>📍 Sector 2, București</p>
+                <p>🕐 Luni - Duminică: 11:30 - 23:30</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Menu Highlights -->
-  <section class="bg-amber-50 py-14 px-6">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white rounded-2xl p-6 shadow-sm">
-        <div class="text-4xl mb-3">🍝</div>
-        <h3 class="font-bold text-lg mb-1">Paste Artizanale</h3>
-        <p class="text-stone-500 text-sm">Preparate zilnic după rețete din Toscana și Napoli.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow-sm">
-        <div class="text-4xl mb-3">🍕</div>
-        <h3 class="font-bold text-lg mb-1">Pizza Napoletană</h3>
-        <p class="text-stone-500 text-sm">Aluat dospit 48h, cuptor cu lemne, ingrediente DOP.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow-sm">
-        <div class="text-4xl mb-3">🍷</div>
-        <h3 class="font-bold text-lg mb-1">Vinuri Italiene</h3>
-        <p class="text-stone-500 text-sm">Selecție de Barolo, Chianti și Prosecco la pahar.</p>
-      </div>
+    <!-- Proof Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">De ce Trattoria Buoni Amici?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">1924</div>
+                    <p class="text-stone-700 font-semibold">Recenzii pozitive</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">20+</div>
+                    <p class="text-stone-700 font-semibold">Ani de tradiție</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">100%</div>
+                    <p class="text-stone-700 font-semibold">Ingrediente italiene</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu/Services Section -->
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Specialități Italiene</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Paste Fatte in Casa</h3>
+                    <p class="text-stone-600">Paste făcute zilnic în bucătărie cu rețete tradiționale din Italia</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Pizza Napoletana</h3>
+                    <p class="text-stone-600">Pizza autentică din cuptorul tradițional cu mozzarella di bufala</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Risotto Milanese</h3>
+                    <p class="text-stone-600">Risotto creamy cu șofran și brânză Parmigiano Reggiano</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Tiramisu Tradițional</h3>
+                    <p class="text-stone-600">Tiramisu preparat zilnic după rețeta din Veneto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Locație</h2>
+            <iframe src="https://maps.google.com/maps?q=44.4150,26.1200&z=15&output=embed" width="100%" height="280" style="border: 0; border-radius: 1rem;" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Rezervă o Masă</h2>
+            <form action="https://formspree.io/f/xpwzgkqv" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numele tău *</label>
+                    <input type="text" name="name" required placeholder="Prenume Nume" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Telefon *</label>
+                    <input type="tel" name="phone" required placeholder="07XX XXX XXX" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Data preferată</label>
+                    <input type="date" name="date" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numărul de persoane</label>
+                    <select name="guests" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                        <option>2 persoane</option>
+                        <option>3 persoane</option>
+                        <option>4 persoane</option>
+                        <option>5+ persoane</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Mesaj (opțional)</label>
+                    <textarea name="message" rows="3" placeholder="Alte detalii..." class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700"></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px]">
+                    Trimite Rezervarea
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-100 py-8 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h3 class="text-xl font-bold">Trattoria Buoni Amici</h3>
+            <p>📞 +40 763 590 519</p>
+            <p>📍 Sector 2, București</p>
+            <p class="text-sm text-stone-400">© 2026 Trattoria Buoni Amici. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta md:hidden bg-white/95 backdrop-blur shadow-up border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex gap-2">
+            <a href="tel:+40763590519" class="flex-1 px-4 py-3 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                📞 Sună
+            </a>
+            <a href="https://wa.me/40763590519" class="flex-1 px-4 py-3 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                💬 WhatsApp
+            </a>
+        </div>
     </div>
-  </section>
-
-  <!-- Contact & Map -->
-  <section class="max-w-4xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-3xl font-bold mb-5">Contact & Locație</h2>
-      <ul class="space-y-3 text-stone-700 font-sans text-base">
-        <li>📍 <strong>Adresă:</strong> Bulevardul Schitu Măgureanu 35,<br>&nbsp;&nbsp;&nbsp;&nbsp; 010184 București, România</li>
-        <li>📞 <strong>Telefon:</strong> <a href="tel:+40763590519" class="text-amber-600 hover:underline">+40 763 590 519</a></li>
-        <li>🕐 <strong>Program:</strong> Luni–Duminică, 12:00–23:00</li>
-      </ul>
-      <a href="tel:+40763590519" class="mt-6 inline-block bg-amber-500 hover:bg-amber-600 text-white font-sans font-semibold px-7 py-3 rounded-full transition">Sunați acum</a>
-    </div>
-    <div class="rounded-2xl overflow-hidden shadow-md h-64">
-      <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps?q=44.438249,26.087489&z=16&output=embed"></iframe>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-stone-800 text-stone-400 text-center font-sans text-sm py-5">
-    © 2025 Trattoria Buoni Amici · Bulevardul Schitu Măgureanu 35, București
-  </footer>
-
 </body>
 </html>

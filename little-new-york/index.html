@@ -1,81 +1,175 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Little New York – Restaurant București</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITTLE NEW YORK — Restaurant în București</title>
+    <meta name="description" content="LITTLE NEW YORK — Restaurant în București. 4355 recenzii. Sună acum: +40 31 222 1718">
+    <meta property="og:title" content="LITTLE NEW YORK — Restaurant în București">
+    <meta property="og:description" content="Restaurant premium cu 4355 recenzii. Rezervări și comenzi online.">
+    <meta property="og:type" content="business.business">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-gradient { background: linear-gradient(135deg, #fef3c7 0%, #faf5f0 100%); }
+        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+        @media (min-width: 768px) { .sticky-cta { position: static; } }
+    </style>
 </head>
-<body class="bg-neutral-950 text-white font-sans">
-
-  <!-- Nav -->
-  <nav class="fixed top-0 w-full z-10 bg-neutral-950/80 backdrop-blur border-b border-neutral-800 px-6 py-4 flex justify-between items-center">
-    <span class="text-yellow-400 font-bold tracking-widest uppercase text-sm">Little New York</span>
-    <a href="#contact" class="text-xs uppercase tracking-widest text-neutral-400 hover:text-yellow-400 transition">Contact</a>
-  </nav>
-
-  <!-- Hero -->
-  <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6"
-    style="background:linear-gradient(to bottom,rgba(0,0,0,.7) 0%,rgba(0,0,0,.85) 100%),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=80') center/cover no-repeat">
-    <p class="text-yellow-400 uppercase tracking-[.3em] text-xs mb-4">Restaurant • București</p>
-    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-none">Little<br/>New York</h1>
-    <p class="text-neutral-300 max-w-md text-base mb-8">
-      O experiență culinară autentică în inima Bucureștiului — preparate rafinate, atmosferă unică și ospitalitate desăvârșită.
-    </p>
-    <a href="#contact"
-      class="bg-yellow-400 text-neutral-950 font-bold uppercase tracking-widest text-sm px-8 py-3 rounded-full hover:bg-yellow-300 transition">
-      Rezervă o masă
-    </a>
-  </section>
-
-  <!-- Features -->
-  <section class="bg-neutral-900 py-16 px-6">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">🍽️</div>
-        <h3 class="font-bold text-lg mb-1">Bucătărie Rafinată</h3>
-        <p class="text-neutral-400 text-sm">Preparate inspirate din clasicii americani, gătite cu ingrediente proaspete.</p>
-      </div>
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">🥂</div>
-        <h3 class="font-bold text-lg mb-1">Bar & Cocktailuri</h3>
-        <p class="text-neutral-400 text-sm">O selecție atentă de băuturi fine și cocktailuri signature.</p>
-      </div>
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">🎷</div>
-        <h3 class="font-bold text-lg mb-1">Atmosferă Vibrantă</h3>
-        <p class="text-neutral-400 text-sm">Muzică live și un decor care te poartă direct în New York.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="bg-neutral-950 py-16 px-6">
-    <div class="max-w-xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-2">Vino la noi</h2>
-      <p class="text-neutral-400 text-sm mb-8">Ne găsești în centrul Bucureștiului, gata să te primim.</p>
-      <div class="space-y-4 text-sm text-neutral-300">
-        <div class="flex items-center justify-center gap-3">
-          <span class="text-yellow-400">📍</span>
-          <a href="https://maps.google.com/?q=44.430531,26.104566" target="_blank"
-            class="hover:text-yellow-400 transition">Strada Bărăției 33, 030167 București, România</a>
+<body class="bg-stone-50 text-stone-900">
+    <!-- Sticky Nav -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-amber-900">LITTLE NEW YORK</h1>
+            <a href="tel:+40312221718" class="hidden md:inline-block px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition text-sm font-semibold">
+                Sună Acum
+            </a>
         </div>
-        <div class="flex items-center justify-center gap-3">
-          <span class="text-yellow-400">📞</span>
-          <a href="tel:+40312221718" class="hover:text-yellow-400 transition">+40 31 222 1718</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12 md:py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-amber-900 mb-4">LITTLE NEW YORK</h1>
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <span class="text-2xl text-amber-600">★★★★★</span>
+                <span class="text-lg font-semibold text-stone-700">4355 recenzii</span>
+            </div>
+            <p class="text-lg text-stone-700 mb-8">Restaurant premium cu bucătărie internațională și atmosferă elegantă</p>
+            
+            <!-- Primary CTA -->
+            <div class="flex flex-col md:flex-row gap-3 justify-center mb-6">
+                <a href="tel:+40312221718" class="px-8 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    📞 Sună pentru Rezervare
+                </a>
+                <a href="https://wa.me/40312221718" class="px-8 py-4 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    💬 WhatsApp
+                </a>
+            </div>
+
+            <!-- Address & Hours -->
+            <div class="text-sm text-stone-600 space-y-1">
+                <p>📍 Sector 1, București</p>
+                <p>🕐 Luni - Duminică: 12:00 - 23:00</p>
+            </div>
         </div>
-      </div>
-      <div class="mt-8">
-        <iframe class="w-full rounded-xl border border-neutral-800" height="220" loading="lazy" style="filter:grayscale(1) invert(1) contrast(.8)"
-          src="https://maps.google.com/maps?q=44.430531,26.104566&z=16&output=embed"></iframe>
-      </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">De ce să alegi LITTLE NEW YORK?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">4355</div>
+                    <p class="text-stone-700 font-semibold">Recenzii pozitive</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">15+</div>
+                    <p class="text-stone-700 font-semibold">Ani de experiență</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">100%</div>
+                    <p class="text-stone-700 font-semibold">Ingrediente proaspete</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu/Services Section -->
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Specialități</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Carne la Grătar</h3>
+                    <p class="text-stone-600">Selecție premium de carne proaspătă, gătită la grătar tradițional</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Pește Proaspăt</h3>
+                    <p class="text-stone-600">Pește zilei, pregătit după rețete clasice și moderne</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Paste Italiene</h3>
+                    <p class="text-stone-600">Paste făcute în casă cu sos tradițional italian</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Deserturi Gourmet</h3>
+                    <p class="text-stone-600">Deserturi preparate zilnic de patiserii experimentate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Locație</h2>
+            <iframe src="https://maps.google.com/maps?q=44.4268,26.1025&z=15&output=embed" width="100%" height="280" style="border: 0; border-radius: 1rem;" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Rezervă o Masă</h2>
+            <form action="https://formspree.io/f/xpwzgkqv" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numele tău *</label>
+                    <input type="text" name="name" required placeholder="Prenume Nume" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Telefon *</label>
+                    <input type="tel" name="phone" required placeholder="07XX XXX XXX" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Data preferată</label>
+                    <input type="date" name="date" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numărul de persoane</label>
+                    <select name="guests" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                        <option>2 persoane</option>
+                        <option>3 persoane</option>
+                        <option>4 persoane</option>
+                        <option>5+ persoane</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Mesaj (opțional)</label>
+                    <textarea name="message" rows="3" placeholder="Alte detalii..." class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700"></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px]">
+                    Trimite Rezervarea
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-100 py-8 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h3 class="text-xl font-bold">LITTLE NEW YORK</h3>
+            <p>📞 +40 31 222 1718</p>
+            <p>📍 Sector 1, București</p>
+            <p class="text-sm text-stone-400">© 2026 LITTLE NEW YORK. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta md:hidden bg-white/95 backdrop-blur shadow-up border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex gap-2">
+            <a href="tel:+40312221718" class="flex-1 px-4 py-3 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                📞 Sună
+            </a>
+            <a href="https://wa.me/40312221718" class="flex-1 px-4 py-3 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                💬 WhatsApp
+            </a>
+        </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-neutral-900 border-t border-neutral-800 py-4 text-center text-xs text-neutral-600">
-    © 2025 Little New York. Toate drepturile rezervate.
-  </footer>
-
 </body>
 </html>

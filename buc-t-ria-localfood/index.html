@@ -1,77 +1,175 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bucătăria.localfood – Bistro București</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucătăria.localfood — Restaurant Local în București</title>
+    <meta name="description" content="Bucătăria.localfood — Restaurant cu mâncare locală și ingrediente proaspete. 1230 recenzii. Sună acum: +40 755 019 605">
+    <meta property="og:title" content="Bucătăria.localfood — Restaurant Local în București">
+    <meta property="og:description" content="Mâncare tradițională românească cu ingrediente locale. 1230 recenzii pozitive.">
+    <meta property="og:type" content="business.business">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-gradient { background: linear-gradient(135deg, #fef3c7 0%, #faf5f0 100%); }
+        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+        @media (min-width: 768px) { .sticky-cta { position: static; } }
+    </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans">
+<body class="bg-stone-50 text-stone-900">
+    <!-- Sticky Nav -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-amber-900">Bucătăria.localfood</h1>
+            <a href="tel:+40755019605" class="hidden md:inline-block px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition text-sm font-semibold">
+                Sună Acum
+            </a>
+        </div>
+    </nav>
 
-  <!-- Hero -->
-  <header class="relative bg-cover bg-center h-64 flex items-center justify-center"
-    style="background-image:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80')">
-    <div class="text-center text-white px-4">
-      <p class="text-sm uppercase tracking-widest text-amber-300 mb-1">Bistro autentic</p>
-      <h1 class="text-4xl font-bold">Bucătăria<span class="text-amber-400">.localfood</span></h1>
-      <p class="mt-2 text-stone-200 text-sm">Gust local, suflet românesc — în inima Bucureștiului</p>
-      <a href="tel:+40755019605"
-        class="mt-5 inline-block bg-amber-400 hover:bg-amber-500 text-stone-900 font-semibold px-6 py-2 rounded-full text-sm transition">
-        Rezervă acum
-      </a>
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12 md:py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-amber-900 mb-4">Bucătăria.localfood</h1>
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <span class="text-2xl text-amber-600">★★★★★</span>
+                <span class="text-lg font-semibold text-stone-700">1230 recenzii</span>
+            </div>
+            <p class="text-lg text-stone-700 mb-8">Mâncare tradițională românească cu ingrediente locale și proaspete</p>
+            
+            <!-- Primary CTA -->
+            <div class="flex flex-col md:flex-row gap-3 justify-center mb-6">
+                <a href="tel:+40755019605" class="px-8 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    📞 Sună pentru Rezervare
+                </a>
+                <a href="https://wa.me/40755019605" class="px-8 py-4 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    💬 WhatsApp
+                </a>
+            </div>
+
+            <!-- Address & Hours -->
+            <div class="text-sm text-stone-600 space-y-1">
+                <p>📍 Sector 3, București</p>
+                <p>🕐 Luni - Duminică: 11:00 - 22:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">De ce Bucătăria.localfood?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">1230</div>
+                    <p class="text-stone-700 font-semibold">Recenzii pozitive</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">100%</div>
+                    <p class="text-stone-700 font-semibold">Ingrediente locale</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">Zilnic</div>
+                    <p class="text-stone-700 font-semibold">Meniu proaspăt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu/Services Section -->
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Specialități Românești</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Ciorbă de Burtă</h3>
+                    <p class="text-stone-600">Ciorbă tradițională cu ingrediente locale și smântână proaspătă</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Mici cu Mustață</h3>
+                    <p class="text-stone-600">Mici gătite la grătar cu pâine caldă și mustață de casă</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Papanasi Calzi</h3>
+                    <p class="text-stone-600">Papanasi proaspeți cu gem și smântână, gata zilnic</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Mâncare de Casă</h3>
+                    <p class="text-stone-600">Meniu zilei cu preparate tradiționale și ingrediente proaspete</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Locație</h2>
+            <iframe src="https://maps.google.com/maps?q=44.3950,26.1050&z=15&output=embed" width="100%" height="280" style="border: 0; border-radius: 1rem;" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Rezervă o Masă</h2>
+            <form action="https://formspree.io/f/xpwzgkqv" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numele tău *</label>
+                    <input type="text" name="name" required placeholder="Prenume Nume" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Telefon *</label>
+                    <input type="tel" name="phone" required placeholder="07XX XXX XXX" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Data preferată</label>
+                    <input type="date" name="date" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numărul de persoane</label>
+                    <select name="guests" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                        <option>2 persoane</option>
+                        <option>3 persoane</option>
+                        <option>4 persoane</option>
+                        <option>5+ persoane</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Mesaj (opțional)</label>
+                    <textarea name="message" rows="3" placeholder="Alte detalii..." class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700"></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px]">
+                    Trimite Rezervarea
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-100 py-8 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h3 class="text-xl font-bold">Bucătăria.localfood</h3>
+            <p>📞 +40 755 019 605</p>
+            <p>📍 Sector 3, București</p>
+            <p class="text-sm text-stone-400">© 2026 Bucătăria.localfood. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta md:hidden bg-white/95 backdrop-blur shadow-up border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex gap-2">
+            <a href="tel:+40755019605" class="flex-1 px-4 py-3 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                📞 Sună
+            </a>
+            <a href="https://wa.me/40755019605" class="flex-1 px-4 py-3 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                💬 WhatsApp
+            </a>
+        </div>
     </div>
-  </header>
-
-  <!-- About -->
-  <section class="max-w-2xl mx-auto px-6 py-10 text-center">
-    <h2 class="text-2xl font-bold mb-3">Despre noi</h2>
-    <p class="text-stone-600 leading-relaxed">
-      La <strong>Bucătăria.localfood</strong> servim preparate tradiționale românești gătite cu ingrediente proaspete,
-      de la producători locali. Un loc cald, prietenos și autentic unde fiecare masă devine o amintire.
-    </p>
-  </section>
-
-  <!-- Features -->
-  <section class="bg-amber-50 py-8">
-    <div class="max-w-2xl mx-auto px-6 grid grid-cols-3 gap-4 text-center text-sm">
-      <div class="p-4 bg-white rounded-xl shadow-sm">
-        <div class="text-2xl mb-1">🥘</div>
-        <p class="font-semibold">Bucătărie locală</p>
-        <p class="text-stone-500 text-xs mt-1">Rețete tradiționale românești</p>
-      </div>
-      <div class="p-4 bg-white rounded-xl shadow-sm">
-        <div class="text-2xl mb-1">🌿</div>
-        <p class="font-semibold">Ingrediente proaspete</p>
-        <p class="text-stone-500 text-xs mt-1">De la fermieri locali</p>
-      </div>
-      <div class="p-4 bg-white rounded-xl shadow-sm">
-        <div class="text-2xl mb-1">🍷</div>
-        <p class="font-semibold">Vinuri românești</p>
-        <p class="text-stone-500 text-xs mt-1">Selecție atentă de vinuri</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="max-w-2xl mx-auto px-6 py-10 grid sm:grid-cols-2 gap-6">
-    <div>
-      <h3 class="text-lg font-bold mb-3">Contact & Locație</h3>
-      <ul class="space-y-2 text-sm text-stone-600">
-        <li>📍 Strada Ion Slătineanu 30, 010602 București</li>
-        <li>📞 <a href="tel:+40755019605" class="text-amber-600 hover:underline">+40 755 019 605</a></li>
-        <li>🕐 Luni – Duminică: 10:00 – 22:00</li>
-      </ul>
-    </div>
-    <div class="rounded-xl overflow-hidden shadow-sm">
-      <iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=26.0963,44.4497,26.1003,44.4517&layer=mapnik&marker=44.450702,26.098344"
-        width="100%" height="140" style="border:0" loading="lazy" title="Hartă locație"></iframe>
-    </div>
-  </section>
-
-  <footer class="text-center text-xs text-stone-400 pb-6">
-    © 2025 Bucătăria.localfood · București, România
-  </footer>
-
 </body>
 </html>

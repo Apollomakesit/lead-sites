@@ -1,76 +1,156 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hushimo Bistro</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hushimo — Restaurant Japonez în București</title>
+    <meta name="description" content="Hushimo — Restaurant japonez autentic în București. 1024 recenzii. Sushi, ramen, și specialități japoneze. Sună acum: +40 31 630 1416">
+    <meta property="og:title" content="Hushimo — Restaurant Japonez în București">
+    <meta property="og:description" content="Sushi și ramen autentic cu 1024 recenzii. Ingrediente importate din Japonia.">
+    <meta property="og:type" content="business.business">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-gradient { background: linear-gradient(135deg, #fef3c7 0%, #faf5f0 100%); }
+        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+        @media (min-width: 768px) { .sticky-cta { position: static; } }
+    </style>
 </head>
-<body class="bg-stone-950 text-stone-100 font-sans">
+<body class="bg-stone-50 text-stone-900">
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-amber-900">Hushimo</h1>
+            <a href="tel:+40316301416" class="hidden md:inline-block px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition text-sm font-semibold">
+                Sună Acum
+            </a>
+        </div>
+    </nav>
 
-  <!-- Nav -->
-  <header class="fixed top-0 w-full z-10 bg-stone-950/80 backdrop-blur border-b border-stone-800">
-    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-      <span class="text-xl font-bold tracking-widest uppercase text-amber-400">Hushimo</span>
-      <a href="tel:+40316301416" class="text-sm text-stone-300 hover:text-amber-400 transition">+40 31 630 1416</a>
+    <section class="hero-gradient py-12 md:py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-amber-900 mb-4">Hushimo</h1>
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <span class="text-2xl text-amber-600">★★★★★</span>
+                <span class="text-lg font-semibold text-stone-700">1024 recenzii</span>
+            </div>
+            <p class="text-lg text-stone-700 mb-8">Sushi și ramen autentic cu ingrediente importate direct din Japonia</p>
+            
+            <div class="flex flex-col md:flex-row gap-3 justify-center mb-6">
+                <a href="tel:+40316301416" class="px-8 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    📞 Sună pentru Comandă
+                </a>
+                <a href="https://wa.me/40316301416" class="px-8 py-4 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-lg min-h-[44px] flex items-center justify-center">
+                    💬 WhatsApp
+                </a>
+            </div>
+
+            <div class="text-sm text-stone-600 space-y-1">
+                <p>📍 Sector 1, București</p>
+                <p>🕐 Luni - Duminică: 11:00 - 23:00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">De ce Hushimo?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">1024</div>
+                    <p class="text-stone-700 font-semibold">Recenzii pozitive</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">100%</div>
+                    <p class="text-stone-700 font-semibold">Ingrediente japoneze</p>
+                </div>
+                <div class="text-center p-6 bg-amber-50 rounded-lg">
+                    <div class="text-4xl font-bold text-amber-700 mb-2">Zilnic</div>
+                    <p class="text-stone-700 font-semibold">Pește proaspăt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Specialități</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Sushi Premium</h3>
+                    <p class="text-stone-600">Sushi proaspăt cu pește zilei și orez perfect condimentat</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Ramen Tradițional</h3>
+                    <p class="text-stone-600">Ramen cald cu brodu de 12 ore și toppinguri autentice</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Tempura Crispy</h3>
+                    <p class="text-stone-600">Tempura ușoară și crocantă cu sos special</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Sake Selection</h3>
+                    <p class="text-stone-600">Selecție de sake premium din diferite regiuni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Locație</h2>
+            <iframe src="https://maps.google.com/maps?q=44.4350,26.1100&z=15&output=embed" width="100%" height="280" style="border: 0; border-radius: 1rem;" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-stone-50">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-8 text-center">Comandă Online</h2>
+            <form action="https://formspree.io/f/xpwzgkqv" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Numele tău *</label>
+                    <input type="text" name="name" required placeholder="Prenume Nume" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Telefon *</label>
+                    <input type="tel" name="phone" required placeholder="07XX XXX XXX" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Adresa de livrare</label>
+                    <input type="text" name="address" placeholder="Adresa completă" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 min-h-[44px]">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-700 mb-2">Comanda (opțional)</label>
+                    <textarea name="order" rows="3" placeholder="Ce dorești să comandezi?" class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700"></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-lg min-h-[44px]">
+                    Trimite Comanda
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-100 py-8 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h3 class="text-xl font-bold">Hushimo</h3>
+            <p>📞 +40 31 630 1416</p>
+            <p>📍 Sector 1, București</p>
+            <p class="text-sm text-stone-400">© 2026 Hushimo. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <div class="sticky-cta md:hidden bg-white/95 backdrop-blur shadow-up border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex gap-2">
+            <a href="tel:+40316301416" class="flex-1 px-4 py-3 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                📞 Sună
+            </a>
+            <a href="https://wa.me/40316301416" class="flex-1 px-4 py-3 border-2 border-amber-700 text-amber-700 rounded-lg hover:bg-amber-50 transition font-semibold text-center min-h-[44px] flex items-center justify-center">
+                💬 WhatsApp
+            </a>
+        </div>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20"
-    style="background: radial-gradient(ellipse at center, #292524 0%, #0c0a09 100%);">
-    <p class="text-amber-400 uppercase tracking-[0.3em] text-xs mb-4">Bistro · București</p>
-    <h1 class="text-6xl md:text-8xl font-black tracking-tight mb-6">Hushimo</h1>
-    <p class="text-stone-400 max-w-md text-lg leading-relaxed mb-10">
-      Un loc liniștit unde gustul întâlnește simplitatea. Bucătărie atentă, atmosferă caldă, în inima Bucureștiului.
-    </p>
-    <a href="tel:+40316301416"
-      class="bg-amber-400 text-stone-950 font-bold px-8 py-3 rounded-full hover:bg-amber-300 transition text-sm uppercase tracking-widest">
-      Rezervă o masă
-    </a>
-  </section>
-
-  <!-- About -->
-  <section class="max-w-4xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10 text-center border-t border-stone-800">
-    <div>
-      <div class="text-amber-400 text-3xl mb-3">☕</div>
-      <h3 class="font-semibold text-lg mb-1">Cafea & Băuturi</h3>
-      <p class="text-stone-400 text-sm">Selecție atentă de cafele de specialitate și băuturi artizanale.</p>
-    </div>
-    <div>
-      <div class="text-amber-400 text-3xl mb-3">🍽️</div>
-      <h3 class="font-semibold text-lg mb-1">Mâncare cu Suflet</h3>
-      <p class="text-stone-400 text-sm">Preparate proaspete, ingrediente locale, rețete cu personalitate.</p>
-    </div>
-    <div>
-      <div class="text-amber-400 text-3xl mb-3">🌿</div>
-      <h3 class="font-semibold text-lg mb-1">Atmosferă</h3>
-      <p class="text-stone-400 text-sm">Un refugiu urban — calm, prietenos, perfect pentru orice moment al zilei.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="border-t border-stone-800 bg-stone-900">
-    <div class="max-w-4xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-2xl font-bold mb-4 text-amber-400">Ne găsești aici</h2>
-        <p class="text-stone-300 mb-1">Str. D. I. Mendeleev 8</p>
-        <p class="text-stone-300 mb-4">010361, București, România</p>
-        <a href="tel:+40316301416" class="text-amber-400 hover:underline font-medium">+40 31 630 1416</a>
-      </div>
-      <div class="rounded-2xl overflow-hidden border border-stone-700 h-56">
-        <iframe
-          src="https://www.google.com/maps?q=44.443520,26.096763&z=16&output=embed"
-          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-6 text-stone-600 text-xs border-t border-stone-800">
-    © 2025 Hushimo Bistro · București
-  </footer>
-
 </body>
 </html>
